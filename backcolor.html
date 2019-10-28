@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+       <title>Digital Clock</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+<body>
+<nav>
+            <a href='clock.html'>Digital Clock</a>
+            <a href='backcolor.html'>Dynamic Background</a>
+            <a href='mouse.html'>Changing Font Size</a>
+            <a href='car.html'>Moving Car</a>
+            <a href='student.html'>Student</a>
+        </nav>
+
+  <h1>Dynamic Background</h1>
+  <div id="background"></div>
+<script>
+  setInterval(function(){
+ var red=Math.floor(Math.random()*255);
+ var blue=Math.floor(Math.random()*255);
+ var green=Math.floor(Math.random()*255);
+    document.querySelector('body').style='background-color:rgb('+red+','+green+','+blue+');transition-duriation:0.5s;';
+  },500);
+  </script>
+</body>
+</html>
+

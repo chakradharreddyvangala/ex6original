@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+       <title>Digital Clock</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+<body>
+<nav>
+            <a href='clock.html'>Digital Clock</a>
+            <a href='backcolor.html'>Dynamic Background</a>
+            <a href='mouse.html'>Changing Font Size</a>
+            <a href='car.html'>Moving Car</a>
+            <a href='student.html'>Student</a>
+        </nav>
+
+  <h1>Change font size!</h1>
+  <div id='md' style='text-align: center;'><p style='font-size:3rem;transition:1s;'>Movie cursor over me to zoom in...</p></div>
+<script>
+  document.getElementById('md').addEventListener('mouseover',function(){
+               document.querySelector('#md p').style='font-size:10em;transition-duration:0.5s;';
+            });
+            document.getElementById('md').addEventListener('mouseout',function(){
+               document.querySelector('#md p').style='font-size:2em;transition-duration:0.5s;';
+            });
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+       <title>Digital Clock</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+<body>
+<nav>
+            <a href='clock.html'>Digital Clock</a>
+            <a href='backcolor.html'>Dynamic Background</a>
+            <a href='mouse.html'>Changing Font Size</a>
+            <a href='car.html'>Moving Car</a>
+            <a href='student.html'>Student</a>
+        </nav>
+
+  <h1>Digital Clock</h1>
+  <div id="time" style="font-size:10rem;"></div>
+<script>
+  setInterval(function(){
+  var d= new Date();
+  var h=d.getHours();
+  var m=d.getMinutes();
+  var s=d.getSeconds();
+    document.getElementById('time').innerHTML=h+':'+m+":"+s;
+  },700);
+  </script>
+</body>
+</html>
+
